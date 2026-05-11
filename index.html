@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zinaya’s Studio | Creative Editor & Dev</title>
     <style>
-        :root { 
-            --sunset-orange: #ff7e5f; 
-            --warm-cream: #fff9f0; 
-            --dark-charcoal: #2d3436; 
-            --soft-gold: #feb47b; 
+        :root {
+            --sunset-orange: #ff7e5f;
+            --warm-cream: #fff9f0;
+            --dark-charcoal: #2d2d2d;
+            --soft-gold: #feb47b;
         }
-        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--warm-cream); color: var(--dark-charcoal); margin: 0; padding: 0; line-height: 1.6; }
-        header { padding: 100px 20px; text-align: center; background: linear-gradient(135deg, var(--sunset-orange), var(--soft-gold)); color: white; }
-        .container { max-width: 800px; margin: auto; padding: 40px 20px; }
-        h1 { font-size: 2.8rem; margin: 0; letter-spacing: -1px; }
-        .tagline { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
-        
-        .skills { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
-        .skill-tag { background: rgba(255,255,255,0.2); border: 1px solid white; padding: 6px 16px; border-radius: 25px; font-size: 0.85rem; backdrop-filter: blur(5px); }
 
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--warm-cream); color: var(--dark-charcoal); margin: 0; line-height: 1.6; }
+        header { padding: 100px 20px; text-align: center; background: linear-gradient(135deg, var(--sunset-orange), var(--soft-gold)); color: white; }
+        h1 { font-size: 2.8rem; margin: 0; letter-spacing: 1px; }
+        .tagline { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+
+        .skills { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+        .skill-tag { background: rgba(255,255,255,0.2); border: 1px solid white; padding: 6px 15px; border-radius: 20px; font-size: 0.9rem; }
+
+        .container { max-width: 800px; margin: auto; padding: 40px 20px; }
         .section-title { border-left: 4px solid var(--sunset-orange); padding-left: 15px; margin-bottom: 30px; }
-        .project-card { background: white; border-radius: 20px; padding: 25px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
-        .video-box { width: 100%; aspect-ratio: 16/9; background: #eee; border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; color: #999; overflow: hidden; }
         
-        .cta-btn { display: inline-block; padding: 15px 35px; background: var(--dark-charcoal); color: white; text-decoration: none; border-radius: 12px; font-weight: bold; transition: 0.3s; }
+        .project-card { background: white; border-radius: 20px; padding: 25px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .video-box { width: 100%; aspect-ratio: 16/9; background: #eee; border-radius: 12px; margin-bottom: 20px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        
+        .cta-btn { display: inline-block; padding: 15px 35px; background: var(--dark-charcoal); color: white; text-decoration: none; border-radius: 30px; font-weight: 600; transition: 0.3s; }
         .cta-btn:hover { background: var(--sunset-orange); transform: scale(1.05); }
-        
-        footer { padding: 60px 20px; text-align: center; font-size: 0.9rem; opacity: 0.6; }
+
+        footer { padding: 50px 20px; text-align: center; font-size: 0.9rem; opacity: 0.6; }
     </style>
 </head>
 <body>
@@ -42,19 +44,29 @@
     </div>
 </header>
 
-<div class="project-card">
-    <div class="video-box">
-        <video width="100%" height="auto" controls style="border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-            <source src="featured-edit.mp4.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <h3>Cinematic Visuals & Storytelling</h3>
-    <p>A showcase of professional color grading and aesthetic editing, specializing in "Golden Hour" vibes and cinematic transitions.</p>
-</div>
+<div class="container">
+    <h2 class="section-title">Featured Work</h2>
     
+    <div class="project-card">
+        <div class="video-box">
+            <video width="100%" height="auto" controls style="display: block;">
+                <source src="featured-edit.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h3>Cinematic Visuals & Storytelling</h3>
+        <p>A showcase of professional color grading and aesthetic editing, specializing in "Golden Hour" vibes and cinematic transitions.</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px;">
+        <h2>Ready to collaborate?</h2>
+        <p>I help creators and brands build their digital presence.</p>
+        <a href="mailto:mullazoya228@gmail.com?subject=Project Inquiry for Zinaya's Studio" class="cta-btn">Contact Zinaya</a>
+    </div>
+</div>
+
 <footer>
-    &copy; 2026 Zinaya's Studio. Designed with a passion for sunsets and stories.
+    <p>&copy; 2026 Zinaya’s Studio. Designed with a passion for sunsets and stories.</p>
 </footer>
 
 </body>
